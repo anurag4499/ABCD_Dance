@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Bree+Serif&family=Playball&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+
+}
+#logo{
+  display: flex;
+  align-items: center;
+  /* padding: 0;
+  margin: 0 40px; */
+  color: rgb(0, 0, 0);
+  position: relative;
+    right: 252px;
+}
+
+#logo img{
+  height: 41px;
+  /* filter: invert(1); */
+}
+
+#navbar{
+  
+  font-size: 30px;
+  background-color: rgb(114, 95, 95);
+  padding: 10px 2px;
+}
+ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li a{ color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:  4px 20px;
+}
+
+ul li a:hover{
+   color: rgb(255, 255, 255);
+}
+
+
+
+#footer {
+  padding-top: 5px;
+  font-size: 20px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#introSection{
+  padding-bottom: 200px;
+    font-size: 50px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 246, 243);
+    background: center/cover no-repeat url("/static/bg1.png") ;
+    height: 550px;
+    background-color: rgb(114, 95, 95);
+}
+#introSection div.small{
+    font-size: 35px;
+    justify-content: center;
+
+}
+#introSection ul{
+    position: relative;
+    top: 200px;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style:disc;
+}
+#introSection ul li{
+  list-style: none;
+}
+.btn{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 8px;
+  padding: 2px 10px;
+  background-color: rgb(114, 95, 95);
+  font-size: 15px;
+  cursor: pointer;
+  margin: 6px;
+}
+.btn:hover{
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+#sponsorSection {
+    font-size: 30px;
+    padding-top:  20px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    height: 300px;
+    background-color: rgb(114, 95, 95);
+}
+#sponsorSection h4{
+    text-align: center;
+    font-size: 35px;
+}
+
+#missionSection {
+ 
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    margin: auto;
+    height: 340px;
+    background-color: rgb(114, 95, 95);
+    
+}
+#missionSection h4{
+    padding-top:  15px;
+    text-align: center;
+    font-size: 35px;
+}
+#sponsor {
+  margin: 4px 7px;
+  display: flex;
+  height: 195px;
+  margin: auto;
+  justify-content: space-around;
+  width: 1000px;
+}
+.spon{
+  margin: 3px 6px;
+  height: 156px;
+  width: 180px;
+}
+.conatiner { padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pera{ 
+   
+    justify-content: center;
+    align-items: center; 
+     font-size: 15px;
+   width: 340px;
+    height: 240px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* padding:10px ; */
+  background-color:  rgb(114, 95, 95);
+}
+.pera h3{
+  text-align: center;
+}
+.pera_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pera-img img{
+  height: 100px;
+  width: 70px;
+  padding: 0px;
+}
