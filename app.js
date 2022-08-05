@@ -5,25 +5,30 @@ const app = express();
 const bodyparser = require("body-parser");
 const port = 80 ;
 
-// console.log("Hey bhai")
-//   mongoose.connect ('mongodb://0.0.0.0:27017/ContactDance',{useNewUrlParser : true , useUnifiedTopology : true } ) ;
-//  var db = mongoose.connection ;
-//   db.on ( 'error' , console.error.bind ( console,'connection error :' ) ) ; 
-//   db.once ( 'open' , function () {
-//      console.log("we are coonected !")});
+console.log("Hey bhai")
+mongoose.connect('mongodb://0.0.0.0:27017/ContactDance',{useNewUrlParser : true , useUnifiedTopology : true } ) ;
 
-    //  const contactSchema = new mongoose.Schema({
-    //     name: String,
-    //     phone: String,
-    //     email: String,
-    //     address: String,
-    //     desc: String,
+ var db = mongoose.connection ;
+  db.on ( 'error' , console.error.bind ( console,'connection error :' ) ) ; 
+  db.once ( 'open' , function () {
+         console.log("we are coonected !")});
 
-    //   });
+     const contactSchema = new mongoose.Schema({
+        name: String,
+        phone: String,
+        email: String,
+        address: String,
+        desc: String,
 
-    //   const Contact = mongoose.model('Contact', contactSchema);
+      });
 
-    // kittySchema.methods.speak = function speak() {
+    //   var kittySchema = mongoose.Schema({
+    //     name: String
+    // })
+
+      const Contact = mongoose.model('Contact', contactSchema);
+      
+    //   contactSchema.methods.speak = function speak() {
     //   const greeting ="My name is " + this.name
     //   console.log(greeting); 
     // };
@@ -53,7 +58,7 @@ app.post('/contact', (req, res)=>{
    myData.save().then(()=>{
      res.send("This item has been Saved to th data base");
     }).catch(()=>{
-      res.status(400).send("item was not saved to the data base")
+      res.status(400).send("item was not saved to the database")
     })
 })
 
